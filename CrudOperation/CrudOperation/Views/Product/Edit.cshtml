@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CrudOperation.Models.Product
+
+<h2>Edit Product</h2>
+
+<form asp-action="Edit" method="post" class="form-background">
+   @*  <input asp-for="ProductId"  /> *@
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Price ($)</label>
+        <input asp-for="Price" />
+    </div>
+    <div>
+        <label>Quantity</label>
+        <input asp-for="Quantity" />
+    </div>
+    <button type="submit" class="shaped-button">Update</button>
+</form>
